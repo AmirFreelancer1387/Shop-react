@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="row">
                 <div className="col-md-4">
                     <h5>About Us</h5>
-                    <p>Have the best experience with Amiri.</p>
+                    <p>The best websites.</p>
                 </div>
                 <div className="col-md-4">
                     <h5>Links</h5>
