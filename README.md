@@ -53,7 +53,7 @@ It focuses on simplicity, responsiveness, and smooth user experience — perfect
 
 ```bash
 # 1️⃣ Clone the project
-git clone https://github.com/yourusername/myEstore.git
+git adres https://github.com/AmirFreelancer1387
 
 # 2️⃣ Navigate to project folder
 cd myEstore
