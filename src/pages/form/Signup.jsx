@@ -119,7 +119,7 @@ const Signup = () => {
             </label>{" "}
           </div>
           <Button variant="contained" className="w-100 py-2" size="medium" type="submit">
-          Medium
+          Submit
         </Button>
         </form>
       </main>

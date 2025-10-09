@@ -13,9 +13,17 @@ const Product = ({ data }) => {
 
   return (
     <>
-      <div className="col-12 col-sm-6 col-lg-4 mt-3 mx-auto d-block my-2">
+      <div className="col-6 col-sm-4  mt-3 mx-auto d-block my-2">
         <Card sx={{ maxWidth: 700 , marginInline:2 }}>
       <CardMedia
+        className="d-block d-lg-none"
+        component="img"
+        alt={title}
+        height="150"
+        src={images[0]}
+      />
+      <CardMedia
+        className="d-none d-lg-block"
         component="img"
         alt={title}
         height="500"
