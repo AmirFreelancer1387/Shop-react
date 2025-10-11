@@ -9,7 +9,8 @@ import Signin from './pages/form/Signin'
 import { CircularProgress } from '@mui/material'
 import Signup from './pages/form/Signup'
 import Wellcome from './components/Wellcome'
-// import Footer from './components/Footer'
+// import CartSlider from './components/PtoductsSlider'
+
 
 
 
@@ -40,6 +41,7 @@ function App() {
 
   return (
     <>
+    
     <ShopContextProvider>
      <Router>
       <Navbar/>
@@ -50,7 +52,6 @@ function App() {
         <Route path='/Signin' element={<Signin/>}/>
         <Route path='/Signup' element={<Signup/>}/>
       </Routes>
-      {/* <Footer/> */}
      </Router>
     </ShopContextProvider>
     </>

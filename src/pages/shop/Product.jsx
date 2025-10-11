@@ -44,7 +44,7 @@ const Product = ({ data }) => {
         <Button size="small" onClick={() => addToCart(id)}>
           <AddShoppingCartIcon/>
         </Button>
-        <span className="mx-2">{count}</span>
+        <span className="mx-2" style={{fontSize:'12px',width:'1px'}}>{count}</span>
         {isInCart && (
               <Button size="small" onClick={() => removeFromCart(id)}>
                 <RemoveShoppingCartIcon/>
