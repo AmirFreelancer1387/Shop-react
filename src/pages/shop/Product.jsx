@@ -10,6 +10,8 @@ import {
 } from "@mui/material";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import RemoveShoppingCartIcon from "@mui/icons-material/RemoveShoppingCart";
+import { ToastContainer } from "react-bootstrap";
+
 
 const Product = ({ data }) => {
   const { id, title, description, images, price } = data;
@@ -18,6 +20,10 @@ const Product = ({ data }) => {
   // پیدا کردن محصول در سبد خرید
   const existingItem = cartItems.find((item) => item.id === id);
   const count = existingItem ? existingItem.count : 0;
+
+
+  
+
 
   return (
     <div className="col-6 col-sm-4 mt-3 mx-auto d-block my-2">
@@ -70,6 +76,7 @@ const Product = ({ data }) => {
           )}
         </CardActions>
       </Card>
+      <ToastContainer/>
     </div>
   );
 };

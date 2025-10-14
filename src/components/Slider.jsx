@@ -1,7 +1,7 @@
 import React from "react";
 import banner1 from "../assets/img1.webp";
 import Charm from "../assets/Charm.webp";
-import Palto from "../assets/Palto.webp";
+// import headphon from "../assets/headphon.jpg";
 import { Link } from "react-router-dom";
 
 const Slider = () => {
