@@ -72,11 +72,12 @@ const Cart = () => {
       </div>
 
       {cartItems.length > 0 && (
-        <div className="d-flex justify-content-between total-price bg-dark p-4 sticky-bottom w-100 rounded-4 my-1 mx-auto">
-          <p className="d-inline text-light">
+        <div className="d-flex justify-content-between total-price bg-dark p-2 sticky-bottom w-75 rounded-4 my-1 mx-auto">
+          <p className="text-light my-2">
             Total Price : {totalPrice.toLocaleString()} $
           </p>
-          <button className="btn btn-primary float-end mb-4 w-25 btn-sm">Buy</button>
+          <button className="btn btn-primary float-end mb-4 btn-sm my-2 d-block d-sm-none">Buy</button>
+          <button className="btn btn-primary float-end mb-4 w-25 my-2 d-none d-sm-block">Buy</button>
         </div>
       )}
     </>
