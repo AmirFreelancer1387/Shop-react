@@ -8,7 +8,8 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Signin from "../pages/form/Signin";
 import Signup from "../pages/form/Signup";
 import { ShopContext } from "../context/shopContext";
-import logoBrand from "../assets/logoBrand.jpg";
+// import logoBrand from "../assets/logoBrand.jpg";
+import logo from "../assets/logo.png";
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
@@ -35,7 +36,7 @@ const Navbar = () => {
               href="/"
               className="d-inline-flex text-light h3 text-decoration-none"
             >
-              <img src={logoBrand} alt="Shapzon" width="60" height="60" role="img" className="rounded-circle bi"/>
+              <img src={logo} alt="Shapzon" width="60" height="60" role="img" className="bg-warning rounded-circle p-1"/>
             </a>
           </div>
 
