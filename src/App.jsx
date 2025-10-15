@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
@@ -10,9 +12,6 @@ import { CircularProgress } from "@mui/material";
 import Signup from "./pages/form/Signup";
 import Wellcome from "./components/Wellcome";
 
-// 🔹 اضافه کردن Toastify
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -35,7 +34,7 @@ function App() {
           height: "100vh",
         }}
       >
-        <CircularProgress color="secondary" />
+        <CircularProgress color="primary" />
       </div>
     );
   }

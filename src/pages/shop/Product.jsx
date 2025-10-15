@@ -26,7 +26,7 @@ const Product = ({ data }) => {
 
 
   return (
-    <div className="col-6 col-sm-4 mt-3 mx-auto d-block my-2">
+    <div className="container col-6 col-sm-4 mt-3 mx-auto d-block my-2">
       <Card sx={{ maxWidth: 700, marginInline: 2 }}>
         {/* عکس */}
         <CardMedia
@@ -46,11 +46,17 @@ const Product = ({ data }) => {
 
         {/* محتوا */}
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom className="d-lg-none" variant="h6" component="div">
+            {title.slice(0,4)}...
+          </Typography>
+          <Typography gutterBottom className="d-none d-lg-block" variant="h6" component="div">
             {title}
           </Typography>
-          <Typography variant="body2" sx={{ color: "text.secondary" }}>
-            {description.slice(0, 40)}...
+          <Typography variant="body2" className="d-block d-lg-none" sx={{ color: "text.secondary" }}>
+            {description.slice(0, 4)}...
+          </Typography>
+          <Typography variant="body2" className="d-none d-lg-block" sx={{ color: "text.secondary" }}>
+            {description.slice(0, 20)}...
           </Typography>
           <Typography
             variant="price"
