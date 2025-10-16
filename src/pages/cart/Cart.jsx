@@ -29,14 +29,14 @@ const Cart = () => {
 
   return (
     <>
-      <div className="row my-2">
+      <div className="row my-4 mx-auto">
         {cartItems.length === 0 && (
           <p className="text-center text-muted">Your cart is empty 🛒</p>
         )}
 
         {cartItems.map((product) => (
-          <div key={product.id} className="col-md-4 mb-3">
-            <div className="card h-100 shadow-sm border-0">
+          <div key={product.id} className="col-md-4 mb-3 container ">
+            <div className="card h-100 shadow-lg border-0">
               <img
                 src={product.image ?? product.images ?? ""}
                 alt={product.title}
@@ -72,12 +72,12 @@ const Cart = () => {
       </div>
 
       {cartItems.length > 0 && (
-        <div className="d-flex justify-content-between total-price bg-dark p-2 sticky-bottom w-75 rounded-4 my-1 mx-auto">
-          <h4 className="text-light my-3">
+        <div className="d-flex justify-content-around total-price bg-dark w-100 rounded-top-3 mx-auto fixed-bottom">
+          <h4 className="text-light mt-4">
             Total Price : {totalPrice.toLocaleString()} $
           </h4>
-          <button className="btn btn-primary float-end mb-4 btn-sm my-3 d-block d-sm-none">Buy</button>
-          <button className="btn btn-primary float-end mb-4 w-25 my-3 d-none d-sm-block">Buy</button>
+          <button className="btn btn-primary float-end mb-4 btn-sm mt-4 d-block d-sm-none">Buy</button>
+          <button className="btn btn-primary float-end mb-4 w-25 mt-4 d-none d-sm-block">Buy</button>
         </div>
       )}
     </>
