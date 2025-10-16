@@ -35,7 +35,7 @@ const Cart = () => {
         )}
 
         {cartItems.map((product) => (
-          <div key={product.id} className="col-md-4 mb-3 container ">
+          <div key={product.id} className="col-md-4 mb-3 container">
             <div className="card h-100 shadow-lg border-0">
               <img
                 src={product.image ?? product.images ?? ""}
@@ -72,7 +72,7 @@ const Cart = () => {
       </div>
 
       {cartItems.length > 0 && (
-        <div className="d-flex justify-content-around total-price bg-dark w-100 rounded-top-3 mx-auto fixed-bottom">
+        <div className="d-flex justify-content-around total-price bg-dark w-100 rounded-top-3 mx-auto position-fixed bottom-0">
           <h4 className="text-light mt-4">
             Total Price : {totalPrice.toLocaleString()} $
           </h4>
