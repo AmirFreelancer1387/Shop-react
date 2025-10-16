@@ -72,7 +72,7 @@ const Cart = () => {
       </div>
 
       {cartItems.length > 0 && (
-        <div className="d-flex justify-content-around total-price bg-dark w-100 rounded-top-3 mx-auto position-fixed bottom-0">
+        <div className="d-flex justify-content-around total-price bg-dark w-100 rounded-top-3 mx-auto fixed-bottom">
           <h4 className="text-light mt-4">
             Total Price : {totalPrice.toLocaleString()} $
           </h4>
