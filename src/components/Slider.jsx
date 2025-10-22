@@ -1,7 +1,7 @@
 import React from "react";
 // import banner1 from "../assets/img1.webp";
 import hoodi from '../assets/img/hoodi.jpg'
-import SmartDev from '../assets/img/SmartDev.jpg'
+import SmartDev from '../assets/img/upscalemedia-transformed.jpeg'
 // import headphon from "../assets/headphon.jpg";
 import { Link } from "react-router-dom";
 
