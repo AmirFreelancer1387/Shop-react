@@ -1,6 +1,7 @@
 import React from "react";
-import banner1 from "../assets/img1.webp";
-import Charm from "../assets/Charm.webp";
+// import banner1 from "../assets/img1.webp";
+import hoodi from '../assets/img/hoodi.jpg'
+import SmartDev from '../assets/img/SmartDev.jpg'
 // import headphon from "../assets/headphon.jpg";
 import { Link } from "react-router-dom";
 
@@ -18,7 +19,7 @@ const Slider = () => {
     <div class="carousel-inner">
       <div class="carousel-item active">
         <Link>
-        <img src={banner1} alt="img" class="d-block w-100" />
+        <img src={hoodi} alt="img" class="d-block w-100" />
         </Link>
         {/* <div class="container">
           <div class="carousel-caption text-start">
@@ -30,7 +31,7 @@ const Slider = () => {
       </div>
       <div class="carousel-item">
         <Link>
-        <img src={Charm} alt="img" class="d-block w-100" />
+        <img src={hoodi} alt="img" class="d-block w-100" />
         </Link>
         {/* <div class="container">
           <div class="carousel-caption">
@@ -42,7 +43,7 @@ const Slider = () => {
       </div>
       <div class="carousel-item">
         <Link>
-        <img src={Charm} alt="img" class="d-block w-100"/>
+        <img src={SmartDev} alt="img" class="d-block w-100"/>
         </Link>
         {/* <div class="container">
           <div class="carousel-caption text-end">
